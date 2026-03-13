@@ -4,6 +4,12 @@
 - [Отчёт о проведённом тестировании](docs/Report.md)
 - [Отчёт по автоматизации тестирования](docs/Summary.md)
 
+## Скриншоты проекта
+
+- [Скрин репорта](screenshots/allure-report.png)
+- [Скрин шагов](screenshots/allure-steps.png)
+- [Скрин gradle](screenshots/gradle-report.png)
+
 ---
 
 # Дипломный проект по профессии «Тестировщик»

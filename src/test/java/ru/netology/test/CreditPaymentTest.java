@@ -419,5 +419,25 @@ public class CreditPaymentTest extends BaseTest {
                 .shouldBe(visible);
     }
 
+    @Test // Баг: допускает три нуля в CVC
+    void shouldBuyPaymentZeroCVC() {
+
+        open("http://localhost:8080");
+
+        PaymentPage paymentPage = new PaymentPage();
+        paymentPage.clickBuyCredit();
+
+        paymentPage.fillForm(
+                "4444 4444 4444 4441",
+                DataHelper.generateMonth(),
+                DataHelper.generateYear(),
+                DataHelper.generateOwner(),
+                "000"
+        );
+
+        $$(".input__sub")
+                .findBy(text("Неверный формат"))
+                .shouldBe(visible);
+    }
 }
 
