@@ -63,7 +63,7 @@
 Склонировать проект:
 
 ```
-git clone https://github.com/Void-Atlas/GateAQA?tab=readme-ov-file
+git clone https://github.com/Void-Atlas/GateAQA
 ```
 
 Перейти в директорию проекта:
