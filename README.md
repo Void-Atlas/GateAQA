@@ -95,7 +95,7 @@ docker-compose up
 Запустить приложение командой:
 
 ```
-java -jar aqa-shop.jar
+java -jar artifacts/aqa-shop.jar
 ```
 
 Приложение будет доступно по адресу:
